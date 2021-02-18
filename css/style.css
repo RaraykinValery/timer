@@ -1,0 +1,142 @@
+body {
+	background-color: #4f408c;
+}
+
+.timer-wrapper {
+	height: 100vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.timer {
+	position: relative;
+	width: 250px;
+	height: 250px;
+	border: 6px solid #c4a6ff;
+	background-color: inherit;
+	border-radius: 50%;
+	margin: 0 auto 45px auto;
+}
+
+.hours-arrow {
+	height: 105px;
+	width: 6px;
+	background: #c4a6ff;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -3px;
+	transform: rotate(180deg);
+	transform-origin: top center;
+	border-radius: 3px;
+
+	/* animation-name: arrowMoveAnticlockwise;
+	animation-timing-function: linear;
+	animation-play-state: paused; */
+	/* animation-duration: 43200s; */
+}
+
+.circle {
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: black;
+	border-radius: 50%;
+}
+
+.input-wrapper {
+	width: 250px;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.input-wrapper > span {
+	color: #fbaa5694;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.inp {
+	width: 63px;
+	height: 44px;
+	color: white;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 5px;
+	border-color: #fbaa56b8;
+	background-color: inherit;
+	text-align: center;
+	outline: none;
+
+	/* width: 63px;
+    height: 44px;
+    color: #fbaa56b8;
+    border-width: 0px;
+    font-size: 40px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #fbaa56b8;
+    background-color: inherit;
+    text-align: center;
+    outline: none;
+    padding-bottom: 5px; */
+}
+
+.tips-wrapper {
+	display: flex;
+	width: 250px;
+	justify-content: space-between;
+	margin-bottom: 15px;
+}
+
+.tip {
+	width: 63px;
+	text-align: center;
+	color: #ffbf0b;
+}
+
+.start-btn, .stop-btn {
+	display: block;
+	margin: 0 auto 20px auto;
+	width: 250px;
+	height: 40px;
+	background: none;
+	text-transform: uppercase;
+	border-radius: 7px;
+	font-weight: bold;
+	cursor: pointer;
+	border-width: 0px;
+}
+
+.start-btn {
+	color: #0d3e0fc9;
+    border: 2px solid #4f408c40;
+	background-color: #a5ffa5d1;
+}
+
+.stop-btn {
+	color:#861f0e;
+    border: 2px solid #4f408c40;
+	background: #ff9da6;
+}
+
+/* @keyframes arrowMoveAnticlockwise {
+	from {transform: translate(0,-105px) rotate(360deg);}
+	to {transform: translate(0,-105px) rotate(0deg)}
+}
+
+@keyframes arrowMoveClockwise {
+	from {transform: translate(0,-105px) rotate(0deg)};
+	to{transform: translate(0,-105px) rotate(360deg);};
+} */
